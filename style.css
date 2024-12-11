@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    text-rendering: optimizeSpeed;
+    image-rendering: pixelated;
+    font-size: 300%;
+    cursor: default;
+    scroll-behavior: smooth;
+    @font-face {font-family: ChronoType, src: url('fonts/ChronoType.tff');}
+    font-family: ChronoType;
+}
+
+h1, h2 { font-weight: normal; text-transform: uppercase; }
+h1 /*[id="credits"]*/ { text-align: center; }
+a:link, a:active, a:visited { text-decoration: none; color: inherit; }
+a:hover { text-decoration: underline; cursor: default; }
+p { text-align: justify; margin-bottom: 5%; }
+ul { list-style-type: square; padding: 0; list-style-type: none; margin-bottom: 5%; }
+ul[id="no"] { text-align: center; }
+ul[id="yes"] > li::before { content: " * "; }
+
+#banner > img { 
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover; 
+    object-position: 0 0px;
+    -o-object-fit: cover;  
+    -o-object-position: 0 0px;
+}
+
+#logo > img {
+    width: 75%;
+    padding: 5%;
+    -webkit-filter: drop-shadow(5px 5px 10px black)
+                    drop-shadow(-5px -5px 10px black);
+            filter: drop-shadow(5px 5px 10px black) 
+                    drop-shadow(-5px -5px 10px black);
+}
+
+#container {
+    width: 100%;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+#banner {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+#logo {
+    padding-top: 20%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
+}
+
+#topbar {
+    clear: both;
+    width: auto;
+    height: auto;
+}
+
+.button {
+    float: left;
+    width: 25%;
+    text-align: center;
+    background-color: inherit;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: ease 0.2s;
+}
+
+.button:hover { background-color: white; color:black; }
+
+#content {
+    padding: 5%;
+    font-size: 75%;
+    margin-bottom: 5%;
+}
+
+footer {
+    margin-top: -3%;
+    margin-bottom: -3%;
+}
+
+footer > p { font-size: 50%; text-align: center; }
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: white, black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+  }
